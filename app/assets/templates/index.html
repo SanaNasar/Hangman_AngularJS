@@ -1,1 +1,20 @@
-<h1>Templates Index Page reached</h1>
+<h1>Templates Index Page reached!!</h1>
+<h3> Welcome to Hangman game</h3>
+
+<!-- Check for a word and match -->
+
+<form ng-submit="hideWord()">
+  <input type="text" ng-model="word" placeholder="word to be hidden">
+  <input type="submit" value="hide">
+</form>
+<p>hiddenWord: {{hiddenWord}}</p>
+<p>name: {{name}}</p>
+
+<div ng-repeat = "letter in letters" style = "display:inline-block;">
+  <button ng-click="hideButton(letter)" >{{letter}}</button>
+</div>
+
+
+ 
+
+</form>
